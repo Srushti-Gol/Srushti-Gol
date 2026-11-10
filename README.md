@@ -58,6 +58,14 @@ Software Engineer with 1.5+ years of experience building web and mobile products
 - Enforced Pundit RBAC across five roles with strict cross-tenant isolation verified by request specs
 - Automated invoice entry with a Sidekiq + GPT-4o-mini pipeline that extracts PDF/scan data, auto-links POs by vendor similarity, and flags price, quantity, and duplicate exceptions
 
+**[CodeRev AI](https://github.com/Srushti-Gol/coderev-ai) — AI-Powered GitHub Code Review & Optimization Platform**
+`FastAPI` `React` `TypeScript` `PostgreSQL` `Celery` `Redis` `LangGraph` `Claude AI`
+
+- LangGraph multi-agent pipeline (security → complexity → optimization → test generation) that auto-reviews every PR via GitHub webhooks and posts findings as Check Run annotations — zero manual trigger needed
+- Tree-sitter AST analysis detects cyclomatic complexity, duplicate code blocks, N+1 query patterns, and dead code; security scanner flags SQL injection, hardcoded secrets, XSS, and path traversal with CVSS-inspired severity scoring
+- Incremental diff scanning with Redis caching skips unchanged files; Celery workers process files in parallel; generated unit tests are executed before suggestions are marked **Verified**
+- Tracks technical debt score across releases with cost-to-fix estimation; exports findings as SARIF 2.1.0 for GitHub Advanced Security integration
+
 ---
 
 ### Tech Stack
